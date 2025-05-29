@@ -1,0 +1,82 @@
+{
+  "name": "node-express-es6-base",
+  "version": "0.0.1",
+  "private": true,
+  "description": "node.js express.js ES6-compliant base package",
+  "keywords": [
+    "node",
+    "express",
+    "es6"
+  ],
+  "author": "Thuan Shafer Preena",
+  "license": "MIT License v2.0",
+  "main": "app.js",
+  "engines": {
+    "npm": "10.9.2",
+    "node": "22.15.1"
+  },
+  "dependencies": {
+    "awilix": "^12.0.5",
+    "axios": "^1.9.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "~2.2.0",
+    "compression": "~1.8.0",
+    "crypto": "1.0.1",
+    "express": "^5.1.0",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "hashmap": "~2.4.0",
+    "merge": "^2.1.1",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.0",
+    "path": "^0.12.7",
+    "pump": "^3.0.2",
+    "q": "^1.5.1",
+    "swagger-jsdoc": "6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "underscore": "^1.13.7",
+    "utf8": "^3.0.0",
+    "winston": "~3.17.0",
+    "ws": "^8.18.2",
+    "yamljs": "~0.3.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "start": "npm run build && node dist/server.js",
+    "start-dev": "nodemon --watch src --exec \"npm run build && node dist/server.js\""
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "semi": "error",
+      "eqeqeq": "error",
+      "curly": "error",
+      "no-irregular-whitespace": "error",
+      "no-var": "error"
+    }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.26.0",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "nodemon": "^3.1.10"
+  }
+}
